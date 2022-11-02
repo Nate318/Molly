@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/tarea2.css"> 
+    <title>Proyecto Portafolio</title>
+</head>
+<body>
+
+  <!--Header-->
+  <header class="container my-5">
+
+    <div class="row nav g-0 justify-content-between rounded-top">
+
+      <!--Logotipo-->
+      <div class="col-auto logo d-flex align-items-center">
+        <h2 class="ps-4 fw-bold text-uppercase mb-0">Manejo Informatico</h2>
+        <div class="icono">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+            <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+          </svg>
+        </div>
+        <p class="mb-0 text-muted">Diseño Gráfico</p>
+      </div>
+
+    </div>
+
+    <div class="row slider w-100">
+      <div class="col">
+        <div class="carousel slide" data-bs-ride="carousel" id="slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/slide-1.jpg" alt="">
+            </div>
+            <div class="carousel-item ">
+              <img class="d-block w-100" src="img/slide-2.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slide-3.png" alt="">
+            </div>
+          </div> 
+          <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span>Prev</span>
+          </button>
+          <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+            <span>Next</span>
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">º
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true" aria-label="slideshow1" class="active"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-current="true" aria-label="slideshow2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-current="true" aria-label="slideshow3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!--Main-->
+  <main>
+    <div class="container">
+
+      <!--Portafolio-->
+      <div class="portafolio row g-0 px-4 mb-5">
+        <div class="col">
+          <h2 class="titulo text-center py-5">Portafolio</h2>
+          <!--Galeria-->
+          <div class="galeria row">
+            <!--Imagen 1-->
+            <div class="contenedor-imagen col-6 col-lg-4 mb-4">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+              <img class="d-block w-100" src="img/img-1.jpg" alt="">
+            </a>
+          </div>
+          <!--Imagen 2-->
+          <div class="contenedor-imagen col-12 col-lg-8 mb-4">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modal-galeria-1">
+              <img class="d-block w-100" src="img/img-2.jpg" alt="">
+            </a>
+          </div>
+           <!--Imagen 3-->
+           <div class="contenedor-imagen col-12 col-lg-8 mb-4">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modal-galeria-2">
+              <img class="d-block w-100" src="img/img-3.jpg" alt="">
+            </a>
+          </div>
+          <!--Imagen 4-->
+          <div class="contenedor-imagen col-6 col-lg-4 mb-4">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modal-galeria-3">
+              <img class="d-block w-100" src="img/img-4.jpg" alt="">
+            </a>
+          </div>
+          <!--Imagen 5-->
+          <div class="contenedor-imagen col-6 col-lg-4 mb-4">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modal-galeria-4">
+              <img class="d-block w-100" src="img/img-5.jpg" alt="">
+            </a>
+          </div>
+           <!--Imagen 6--> 
+           <div class="contenedor-imagen col-6 col-lg-4 mb-4">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modal-galeria-5">
+              <img class="d-block w-100" src="img/a.jpeg" alt="">
+            </a>
+          </div>
+          <!--Imagen 7-->
+          <div class="contenedor-imagen col-12 col-lg-4 mb-4">
+            <a href="" data-bs-toggle="modal" data-bs-target="#modal-galeria-6">
+              <img class="d-block w-100" src="img/img-7.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <!--Modal-->
+        <div class="modal fade" id="modal-galeria" tabindex="-1" aria-labelledby="modal-galeria" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+              <img src="img/img-1.jpg" alt="" id="imagen-modal">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal-galeria-1" tabindex="-1" aria-labelledby="modal-galeria-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+              <img src="img/img-2.jpg" alt="" id="imagen-modal">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal-galeria-2" tabindex="-1" aria-labelledby="modal-galeria-2" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+              <img src="img/img-3.jpg" alt="" id="imagen-modal">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal-galeria-3" tabindex="-1" aria-labelledby="modal-galeria-3" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+              <img src="img/img-4.jpg" alt="" id="imagen-modal">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal-galeria-4" tabindex="-1" aria-labelledby="modal-galeria-4" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+              <img src="img/img-5.jpg" alt="" id="imagen-modal">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal-galeria-5" tabindex="-1" aria-labelledby="modal-galeria-5" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+              <img src="img/a.jpeg" alt="" id="imagen-modal">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal-galeria-6" tabindex="-1" aria-labelledby="modal-galeria-6" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+              <img src="img/img-7.jpg" alt="" id="imagen-modal">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!--Acerca de-->
+      <div class="acerca-de row align-items-center px-4 mb-5">
+        <div class="foto col-4 text-center">
+          <img class="rounded-circle mb-3 w-100" src="img/slide-1.jpg" alt="">
+          <p class="nombre">Trello Design</p>
+        </div>
+        <div class="info col-8">
+          <h2 class="titulo">Acerca de</h2>
+          <p class="resumen">Trello es una herramienta visual que permite a los equipos gestionar cualquier tipo de proyecto y flujo de trabajo, así como supervisar tareas. Añade archivos, checklists o incluso automatizaciones: personalízalo todo según las necesidades de tu equipo. Solo tienes que registrarte, crear un tablero y ¡listo!</p>
+          <h2 class="titulo">Centro neurálgico de productividad</h2>
+          <p class="resumen">
+            Sencillo, flexible y potente. Todo lo que necesitas son tableros, listas y tarjetas para poder ver de forma clara quién está haciendo qué y las tareas pendientes.</p>
+          <p class="label">Productividad</p>
+          <div class="progress mb-3">
+            <div class="progress-bar text-start" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" style="width:100%">100%</div>
+          </div>
+          <p class="label">Gestionamiento de tareas</p>
+          <div class="progress mb-3">
+            <div class="progress-bar text-start" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" style="width:100%">100%</div>
+          </div>
+          <p class="label">Interacción de miembros</p>
+          <div class="progress mb-3">
+            <div class="progress-bar text-start" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" style="width:100%">100%</div>
+          </div>
+          <p class="resumen">Verás el trabajo de otra manera aporta perspectiva a toda la organización. Las vistas facilitan la visualización de datos en tableros y equipos de forma clara y práctica.</p>
+          <a href="https://trello.com/home" class="btn">Mas Información</a>
+        </div>
+      </div>
+
+  </main>
+
+    
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

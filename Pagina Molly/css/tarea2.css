@@ -1,0 +1,179 @@
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+header .nav{
+    min-height: 80px;
+    background: #fff;
+    overflow: hidden;
+}
+
+header .logo h2,
+header .logo p{
+    font-size: 16px;
+    display: inline-block;
+}
+
+.carousel-inner img{
+	height: 500px;
+}
+
+header .logo .icono{
+    color: #3e5f8a;
+}
+
+header .logo svg{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.menu .c1{background: #3da5e2; text-align: center;}
+.menu .c2{background: #005385; text-align: center}
+.menu .c3{background: #003855; text-align: center}
+
+.menu .c1:hover{background: #1ba0ef;}
+.menu .c2:hover{background: #0042a6;}
+.menu .c3:hover{background: #002d44;}
+
+.portafolio {
+	border-top: 5px solid #3da5e2;
+	background: #fff;
+}
+
+.portafolio .titulo {
+	color: #3da5e2;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.portafolio .galeria .contenedor-imagen {
+	max-height: 180px;
+	overflow: hidden;
+}
+
+.portafolio .galeria .contenedor-imagen a {
+	background: #3da5e2;
+	display: inline-block;
+}
+
+.portafolio .galeria .contenedor-imagen:hover img {
+	opacity: .3;
+}
+
+/* Ventana Modal */
+.modal-dialog {
+	max-width: 1000px;
+}
+
+.fade .modal-content img{
+	height: 500px;
+}
+
+/* Acerca de */
+.acerca-de .foto .nombre {
+	color: #545454;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.acerca-de .info .titulo {
+	color: #005385;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.acerca-de .info .resumen {
+	letter-spacing: 1px;
+}
+
+.acerca-de .info .label {
+	font-size: 18px;
+	font-weight: 600;
+	color: #005385;
+	margin-bottom: 10px;
+}
+
+.acerca-de .info .progress {
+	background: #005385;
+	border-radius: 0;
+	height: 25px;
+}
+
+.acerca-de .info .progress .progress-bar {
+	background: #3da5e2;
+	line-height: 25px;
+	padding-left: 20px;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+
+/* MEDIAQUERIES */
+/* Dispositivo sm */
+@media screen and (max-width: 576px){
+	.redes-sociales .icono {
+		width: 50px;
+		height: 50px;
+	}
+
+	.redes-sociales .icono svg {
+		width: 25px;
+		height: 25px;
+	}
+
+}
+
+/* Dispositivo md */
+@media screen and (max-width: 768px){}
+
+/* Dispositivo lg */
+@media screen and (max-width: 992px){
+	.logo {
+		height: 76px;
+	}
+
+	header .menu {
+		min-height: 76px;
+	}
+
+	header .menu a {
+		width: 100%;
+	}
+
+	.portafolio .galeria .contenedor-imagen:nth-child(1) {order: 1;}
+	.portafolio .galeria .contenedor-imagen:nth-child(2) {order: 3;}
+	.portafolio .galeria .contenedor-imagen:nth-child(3) {order: 6;}
+	.portafolio .galeria .contenedor-imagen:nth-child(4) {order: 2;}
+	.portafolio .galeria .contenedor-imagen:nth-child(5) {order: 5;}
+	.portafolio .galeria .contenedor-imagen:nth-child(6) {order: 4;}
+	.portafolio .galeria .contenedor-imagen:nth-child(7) {order: 7;}
+}
+
+/* Dispositivo xl */
+@media screen and (max-width: 1200px){}
+
+/* Dispositivo xxl */
+@media screen and (max-width: 1400px){}
+
